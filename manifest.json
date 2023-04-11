@@ -1,0 +1,20 @@
+{
+    "name": "Toggle Content Scripts Sample",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "content_scripts": [
+      {
+        "js": ["matches1.js"],
+        "matches": ["<all_urls>"]
+      },
+      {
+        "js": ["matches2.js"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
